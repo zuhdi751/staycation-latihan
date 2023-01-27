@@ -43,7 +43,13 @@ function Button(props) {
     }
   }
 
-  return <div></div>;
+  return (
+    <button
+      className={className.join(" ")}
+      style={props.style}
+      onClick={onClick}
+    >{props.children}</button>
+  );
 }
 
 export default Button;
